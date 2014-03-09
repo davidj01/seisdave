@@ -29,7 +29,7 @@
       $data = mysqli_query($dbc, $query);
       if (mysqli_num_rows($data) == 0) {
         // The username is unique, so insert the data into the database
-        $query = "INSERT INTO users (username, password, join_date) VALUES ('$username', SHA('$password1'), NOW())";
+        $query = "INSERT INTO users (username, password, join_date) VALUES ('$username', '$password1', NOW())";
         mysqli_query($dbc, $query);
 
         // Confirm success with the user

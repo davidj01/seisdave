@@ -2,9 +2,9 @@
   session_start();
 
   // If the session vars are not set, try to set them with a cookie
-  if (!isset($_SESSION['user_id'])) {
-    if (isset($_COOKIE['user_id']) && isset($_COOKIE['username'])) {
-      $_SESSION['user_id'] = $_COOKIE['user_id'];
+  if (!isset($_SESSION['id'])) {
+    if (isset($_COOKIE['id']) && isset($_COOKIE['username'])) {
+      $_SESSION['id'] = $_COOKIE['id'];
       $_SESSION['username'] = $_COOKIE['username'];
     }
   }
@@ -31,7 +31,7 @@
   require_once('connectvars.php');
 
   // Make sure the user is logged in before going any further.
-  if (!isset($_SESSION['user_id'])) {
+  if (!isset($_SESSION['id'])) {
     echo '<p class="login">Please <a href="login.php">log in</a> to access this page.</p>';
     exit();
   }
@@ -44,8 +44,7 @@
 
   if (isset($_POST['submit'])) {
     // Grab the profile data from the POST
-    $first_name = mysqli_real_escape_string($dbc, trim($_POST['firstname']));
-    $last_name = mysqli_real_escape_string($dbc, trim($_POST['lastname']));
+    $name = mysqli_real_escape_string($dbc, trim($_POST['name']));
     $gender = mysqli_real_escape_string($dbc, trim($_POST['gender']));
     $birthdate = mysqli_real_escape_string($dbc, trim($_POST['birthdate']));
     $city = mysqli_real_escape_string($dbc, trim($_POST['city']));
@@ -84,15 +83,15 @@
 
     // Update the profile data in the database
     if (!$error) {
-      if (!empty($first_name) && !empty($last_name) && !empty($gender) && !empty($birthdate) && !empty($city) && !empty($state)) {
+      if (!empty($name) && !empty($gender) && !empty($birthdate) && !empty($city) && !empty($state)) {
         // Only set the picture column if there is a new picture
         if (!empty($new_picture)) {
-          $query = "UPDATE users SET first_name = '$first_name', last_name = '$last_name', gender = '$gender', " .
-            " birthdate = '$birthdate', city = '$city', state = '$state', picture = '$new_picture' WHERE user_id = '" . $_SESSION['user_id'] . "'";
+          $query = "UPDATE users SET name = '$name', gender = '$gender', " .
+            " birthdate = '$birthdate', city = '$city', state = '$state', picture = '$new_picture' WHERE id = '" . $_SESSION['id'] . "'";
         }
         else {
-          $query = "UPDATE users SET first_name = '$first_name', last_name = '$last_name', gender = '$gender', " .
-            " birthdate = '$birthdate', city = '$city', state = '$state' WHERE user_id = '" . $_SESSION['user_id'] . "'";
+          $query = "UPDATE users SET name = '$name', gender = '$gender', " .
+            " birthdate = '$birthdate', city = '$city', state = '$state' WHERE id = '" . $_SESSION['id'] . "'";
         }
         mysqli_query($dbc, $query);
 
@@ -109,13 +108,12 @@
   } // End of check for form submission
   else {
     // Grab the profile data from the database
-    $query = "SELECT first_name, last_name, gender, birthdate, city, state, picture FROM users WHERE user_id = '" . $_SESSION['user_id'] . "'";
+    $query = "SELECT name, gender, birthdate, city, state, picture FROM users WHERE id = '" . $_SESSION['id'] . "'";
     $data = mysqli_query($dbc, $query);
     $row = mysqli_fetch_array($data);
 
     if ($row != NULL) {
-      $first_name = $row['first_name'];
-      $last_name = $row['last_name'];
+      $name = $row['name'];
       $gender = $row['gender'];
       $birthdate = $row['birthdate'];
       $city = $row['city'];
@@ -133,10 +131,8 @@
   <form enctype="multipart/form-data" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
     <input type="hidden" name="MAX_FILE_SIZE" value="<?php echo MM_MAXFILESIZE; ?>" />
       <label>Edit your profile:</label><br /><br />
-      <label for="firstname">First name:</label>
-      <input type="text" id="firstname" name="firstname" value="<?php if (!empty($first_name)) echo $first_name; ?>" /><br />
-      <label for="lastname">Last name:</label>
-      <input type="text" id="lastname" name="lastname" value="<?php if (!empty($last_name)) echo $last_name; ?>" /><br />
+      <label for="name">Name (first and last):</label>
+      <input type="text" id="name" name="name" value="<?php if (!empty($name)) echo $name; ?>" /><br />
       <label for="gender">Gender:</label>
       <select id="gender" name="gender">
         <option value="M" <?php if (!empty($gender) && $gender == 'M') echo 'selected = "selected"'; ?>>Male</option>

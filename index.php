@@ -8,7 +8,7 @@
   $error_msg = "";
 
   // If the user is not logged in, try to log them in
-  if (!isset($_SESSION['user_id'])) {
+  if (!isset($_SESSION['id'])) {
     if (isset($_POST['submit'])) {
       // Connect to the database
       $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
@@ -19,15 +19,15 @@
 
       if (!empty($user_username) && !empty($user_password)) {
         // Look up the username and password in the database
-        $query = "SELECT user_id, username FROM users WHERE username = '$user_username' AND password = SHA('$user_password')";
+        $query = "SELECT id, username FROM users WHERE username = '$user_username' AND password = '$user_password'";
         $data = mysqli_query($dbc, $query);
 
         if (mysqli_num_rows($data) == 1) {
           // The log-in is OK so set the user ID and username session vars (and cookies), and redirect to the profile page
           $row = mysqli_fetch_array($data);
-          $_SESSION['user_id'] = $row['user_id'];
+          $_SESSION['id'] = $row['id'];
           $_SESSION['username'] = $row['username'];
-          setcookie('user_id', $row['user_id'], time() + (60 * 60 * 24 * 30));    // expires in 30 days
+          setcookie('id', $row['id'], time() + (60 * 60 * 24 * 30));    // expires in 30 days
           setcookie('username', $row['username'], time() + (60 * 60 * 24 * 30));  // expires in 30 days
           $home_url = 'http://' . $_SERVER['HTTP_HOST'] . dirname($_SERVER['PHP_SELF']) . '/viewprofile.php';
           header('Location: ' . $home_url);
@@ -60,7 +60,7 @@
 
 <?php
   // If the session var is empty, show any error message and the log-in form; otherwise confirm the log-in
-  if (empty($_SESSION['user_id'])) {
+  if (empty($_SESSION['id'])) {
     echo '<p class="error">' . $error_msg . '</p>';
 ?>
 
