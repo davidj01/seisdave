@@ -19,12 +19,20 @@
   <link rel="stylesheet" type="text/css" href="style_main.css" />
 </head>
 <body>
-  <div class="logo"><br /><br /><img src="images/davebook.png" />
-  <h4>If they're not on davebook they're not your friend.</h4>
-  <div class="bluebox"><a href="viewprofile.php">My Profile</a> &nbsp; | &nbsp;
-  <a href="viewallusers.php">View All Users</a> &nbsp; | &nbsp;
-  <a href="logout.php">Log Out</a> (<?php echo $_SESSION['username'] ?>)</div></div>
-
+	<div class="logo"><br /><br /><img src="images/davebook.png" />
+	<h4>If they're not on davebook they're not your friend.</h4>
+		<div class="bluebox"><a href="viewprofile.php">My Profile</a> &nbsp; | &nbsp;
+		<a href="viewallusers.php">View All Users</a> &nbsp; | &nbsp;
+		<a href="logout.php">Log Out</a> (<?php echo $_SESSION['username'] ?>)
+		</div>
+	</div>
+	<div>
+	  <form method="post" action="searchresults.php">
+		<label for="keyword">Search:</label>
+		<input type="text" name="keyword" />
+		<input type="submit" name="search" value="Search" />
+	  </form>
+	</div>
 <?php
   require_once('appvars.php');
   require_once('connectvars.php');
