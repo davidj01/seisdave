@@ -23,7 +23,7 @@ $con = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
    die('Could not connect: ' . mysqli_error($con));
    }
 
-$sql="SELECT id, name FROM users WHERE name LIKE '%$q%'";
+$sql="SELECT id, name FROM users WHERE name LIKE '%$q%' ORDER BY name";
 
 $result = mysqli_query($con,$sql);
 

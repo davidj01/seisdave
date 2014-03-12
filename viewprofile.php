@@ -32,10 +32,12 @@
 	</div>
 	<div>
 	  <form method="post" action="searchresults.php">
-		<label for="keyword">Search:</label>
+		<label for="keyword">Non-Ajax Search:</label>
 		<input type="text" name="keyword" />
 		<input type="submit" name="search" value="Search" />
 	  </form>
+	  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Search using:<a href="searchajax1.htm">&nbsp;&nbsp;&nbsp;<strong>Ajax Search</strong></a>&nbsp;&nbsp;&nbsp;or&nbsp;&nbsp;&nbsp;<a href="searchajax2.htm"><strong>Ajax/Jquery Search</strong></a>
+	  </div>
 	</div>
 <table><tr><td width="300px">
 <?php
@@ -143,7 +145,7 @@
   $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 
   // Retrieve the message data from MySQL
-  $query = "select distinct username, date, message from messages where username = '" . $_SESSION['username'] . "' OR username in (select friend as username from relationships where username = '" . $_SESSION['username'] . "') order by date desc limit 25";
+  $query = "select distinct username, date, message from messages where username = '" . $_SESSION['username'] . "' OR username in (select friend as username from relationships where username = '" . $_SESSION['username'] . "') order by date limit 25";
   $data3 = mysqli_query($dbc, $query);
 
   // Loop through the array of message data, formatting it as HTML

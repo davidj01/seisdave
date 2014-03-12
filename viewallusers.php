@@ -28,10 +28,12 @@
 	</div>
 	<div>
 	  <form method="post" action="searchresults.php">
-		<label for="keyword">Search:</label>
+		<label for="keyword">Non-Ajax Search:</label>
 		<input type="text" name="keyword" />
 		<input type="submit" name="search" value="Search" />
 	  </form>
+	  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Search using:<a href="searchajax1.htm">&nbsp;&nbsp;&nbsp;<strong>Ajax Search</strong></a>&nbsp;&nbsp;&nbsp;or&nbsp;&nbsp;&nbsp;<a href="searchajax2.htm"><strong>Ajax/Jquery Search</strong></a>
+	  </div>
 	</div>
 <?php
   require_once('appvars.php');
