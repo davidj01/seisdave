@@ -2,7 +2,7 @@
 -- Create database 'seisdave'
 --
 
-CREATE DATABASE seisdave;
+-- CREATE DATABASE seisdave;
 
 --
 -- Use database 'seisdave'

@@ -50,7 +50,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Davebook - Inflict the Mundane Events of Your Daily Life on as Many People as Humanly Possible!</title>
+  <title>Davebook</title>
   <link rel="stylesheet" type="text/css" href="style_login.css" />
 </head>
 <body>
