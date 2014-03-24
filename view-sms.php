@@ -1,5 +1,5 @@
 <?php
-include_once('config.php');
+include_once('config-sms.php');
 
 $sql = "SELECT * FROM twilliotest order by ts desc limit 20";
 

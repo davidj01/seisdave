@@ -1,5 +1,5 @@
 <?php
-	include_once('config.php');
+	include_once('config-sms.php');
 	print_r($_POST);
 
 	foreach ($_POST as $k => $v) {

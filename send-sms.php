@@ -10,7 +10,7 @@ $client = new Services_Twilio($sid, $token);
 $message = $client->account->messages->sendMessage(
   '+16122551559', // From a valid Twilio number
   '+16128125823', // Text this number
-  "Hello monkey!"
+  "Danger! Someone has accessed your send-sms.php page!"
 );
 
 print $message->sid;
