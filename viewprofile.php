@@ -27,7 +27,8 @@
 	  <h4>If they're not on davebook they're not your friend.</h4>
 	  <div class="bluebox"><a href="viewprofile.php">My Profile</a> &nbsp; | &nbsp;
 	  <a href="viewallusers.php">View All Users</a> &nbsp; | &nbsp;
-	  <a href="logout.php">Log Out</a> (<?php echo $_SESSION['username'] ?>)
+	  <a href="misc.php">Misc</a> &nbsp; | &nbsp;
+	  <a href="logout.php">Log Out</a> <!-- (<?php echo $_SESSION['username'] ?>) -->
 	  </div>
 	</div>
 	<div>
