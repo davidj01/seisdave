@@ -120,13 +120,15 @@
 <br />
 <br />
 <br />
+Messages below are results of successful tests of Twilio SMS populating 'seisdave' MySQL database on this site.<br />
 * My Twilio number - 612-255-1559 - is currently pointing to our project site - ScrapAttack.net. *
 <br />
 <br />
 <?php
 include_once('config-sms.php');
 
-$sql = "SELECT ts, SUBSTRING(SUBSTRING_INDEX(SUBSTRING_INDEX(twilliotest.dump, '\n', 17), '\n', -1), 8, 10) as phone,
+$sql = "SELECT ts, SUBSTRING(SUBSTRING_INDEX(SUBSTRING_INDEX(twilliotest.dump, '\n', 17), '\n', -1), 8, 10) as fromphone,
+SUBSTRING(SUBSTRING_INDEX(SUBSTRING_INDEX(twilliotest.dump, '\n', 13), '\n', -1), 6, 10) as tophone, 
 SUBSTRING(SUBSTRING_INDEX(SUBSTRING_INDEX(twilliotest.dump, '\n', 11), '\n', -1), 6, 10000) as body 
 from twilliotest order by ts desc limit 20";
 
@@ -137,7 +139,7 @@ if ($result=mysqli_query($db,$sql))
   while ($row=mysqli_fetch_row($result))
   {
 //    printf('<tr><td>%s</td><td><pre>%s</pre></td></tr>',$row[0],$row[1]);
-    printf('<tr><td>%s</td></tr><tr><td>%s</td></tr><tr><td>%s</td></tr><tr><td><br /></td></tr>',$row[0],$row[1],$row[2]);
+    printf('<tr><td>Time: </td><td>%s</td></tr><tr><td>From: </td><td>%s</td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;To: </td><td>%s</td></tr><tr><td>Body: </td><td>%s</td></tr><tr><td><br /></td></tr>',$row[0],$row[1],$row[2],$row[3]);
   }
   // Free result set
   mysqli_free_result($result);

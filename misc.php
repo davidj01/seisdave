@@ -118,7 +118,27 @@
 </td>
 <td>
 <p>
-<br /><br /><a href="hw05-twilio.php">HW05 - Twilio SMS</a>
+<br />
+<h3>Homework Assignments</h3>
+</p>
+<p>
+<table>
+	<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+	<tr><td><u><b>Assignment</b></u></td><td></td><td><u><b>Status</b></u></td><td></td><td><u><b>Writeup</b></u></td><td></td><td><u><b>Notes</b></u></td><td></td><td></td></tr>
+	<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+	<tr><td>HW01 - Online Survey</td><td>&nbsp;&nbsp;&nbsp;</td><td>Completed</td><td>&nbsp;&nbsp;&nbsp;</td><td></td><td>&nbsp;&nbsp;&nbsp;</td><td></td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
+	<tr><td>HW02 - Register Domain</td><td>&nbsp;&nbsp;&nbsp;</td><td>Completed</td><td>&nbsp;&nbsp;&nbsp;</td><td><a href="docs/HW02-RegisterDomain.docx">Writeup</a></td><td>&nbsp;&nbsp;&nbsp;</td><td></td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
+	<tr><td>HW03 - PHP/MySQL FriendFace</td><td>&nbsp;&nbsp;&nbsp;</td><td>Completed</td><td>&nbsp;&nbsp;&nbsp;</td><td><a href="docs/HW03-PHPMySQLFriendFace.docx">Writeup</a></td><td>&nbsp;&nbsp;&nbsp;</td><td>Deliverable is this site.</td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
+	<tr><td>HW04 - AJAX</td><td>&nbsp;&nbsp;&nbsp;</td><td>Completed</td><td>&nbsp;&nbsp;&nbsp;</td><td></td><td>&nbsp;&nbsp;&nbsp;</td><td>Deliverable is on this site.</td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
+	<tr><td><a href="hw05-twilio.php">HW05 - Web API: Twilio</a></td><td>&nbsp;&nbsp;&nbsp;</td><td>Completed</td><td>&nbsp;&nbsp;&nbsp;</td><td><a href="">Writeup</a></td><td>&nbsp;&nbsp;&nbsp;</td><td><a href="hw05-twilio.php">Deliverable is on this site.</a></td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
+	<tr><td><a href="">HW05 - Web API: Oauth</a></td><td>&nbsp;&nbsp;&nbsp;</td><td>In Progress</td><td>&nbsp;&nbsp;&nbsp;</td><td><a href="">Writeup</a></td><td>&nbsp;&nbsp;&nbsp;</td><td></td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
+	<tr><td>HW06 - Earth Sandwich</td><td>&nbsp;&nbsp;&nbsp;</td><td>Skipped</td><td>&nbsp;&nbsp;&nbsp;</td><td></td><td>&nbsp;&nbsp;&nbsp;</td><td></td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
+	<tr><td>HW07 - Cloud</td><td>&nbsp;&nbsp;&nbsp;</td><td>Incomplete</td><td>&nbsp;&nbsp;&nbsp;</td><td><a href="">Writeup</a></td><td>&nbsp;&nbsp;&nbsp;</td><td></td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
+	<tr><td>HW08 - MVC</td><td>&nbsp;&nbsp;&nbsp;</td><td>Incomplete</td><td>&nbsp;&nbsp;&nbsp;</td><td><a href="">Writeup</a></td><td>&nbsp;&nbsp;&nbsp;</td><td></td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
+	<tr><td>HW09 - Mashups</td><td>&nbsp;&nbsp;&nbsp;</td><td>Skipped</td><td>&nbsp;&nbsp;&nbsp;</td><td></td><td>&nbsp;&nbsp;&nbsp;</td><td></td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
+	<tr><td>HW10 - Mobile Web</td><td>&nbsp;&nbsp;&nbsp;</td><td>Skipped</td><td>&nbsp;&nbsp;&nbsp;</td><td></td><td>&nbsp;&nbsp;&nbsp;</td><td></td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
+	<tr><td>HW11 - WebDB</td><td>&nbsp;&nbsp;&nbsp;</td><td>Skipped</td><td>&nbsp;&nbsp;&nbsp;</td><td></td><td>&nbsp;&nbsp;&nbsp;</td><td></td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
+</table>
 </p>
 </td></tr></table>
 
