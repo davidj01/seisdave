@@ -1,4 +1,15 @@
 #################
+## My ignores
+#################
+
+connectvars.php.dreamhost
+config-sms.php.dreamhost
+Google
+gplus-quickstart-php
+twilio-php
+
+
+#################
 ## Eclipse
 #################
 

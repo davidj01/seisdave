@@ -1,7 +1,0 @@
-<?php
-  // Define database connection constants
-  define('DB_HOST', 'mysql.bromad.com');
-  define('DB_USER', 'davols17');
-  define('DB_PASSWORD', 'fNmrjLsp');
-  define('DB_NAME', 'seisdave');
-?>
