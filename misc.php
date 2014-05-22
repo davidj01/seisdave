@@ -120,6 +120,10 @@
 <td>
 <p>
 <br />
+<h3>Github Repository</h3>Github repository for this site: https://github.com/davidj01/seisdave.git
+</p>
+<p>
+<br />
 <h3>Homework Assignments</h3>
 </p>
 <p>
@@ -133,12 +137,13 @@
 	<tr><td>HW04 - AJAX</td><td>&nbsp;&nbsp;&nbsp;</td><td>Completed</td><td>&nbsp;&nbsp;&nbsp;</td><td>N/A</td><td>&nbsp;&nbsp;&nbsp;</td><td>Deliverable: On this site.</td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
 	<tr><td><a href="hw05-twilio.php">HW05 - Web API: Twilio</a></td><td>&nbsp;&nbsp;&nbsp;</td><td>Completed</td><td>&nbsp;&nbsp;&nbsp;</td><td><a href="docs/HW05-WebAPIs-Writeup.docx">Writeup</a></td><td>&nbsp;&nbsp;&nbsp;</td><td><a href="hw05-twilio.php">Deliverable: <u>Here</u>.</a></td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
 	<tr><td><a href="hw05-oauth.php">HW05 - Web API: Oauth</a></td><td>&nbsp;&nbsp;&nbsp;</td><td>Completed</td><td>&nbsp;&nbsp;&nbsp;</td><td><a href="docs/HW05-WebAPIs-Writeup.docx">Writeup</a></td><td>&nbsp;&nbsp;&nbsp;</td><td><a href="hw05-oauth.php">Deliverable: <u>Here</u>.</a></td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
-	<tr><td><font  color="#999">HW06 - Earth Sandwich</font></td><td>&nbsp;&nbsp;&nbsp;</td><td><font  color="#999">Skipped</font></td><td>&nbsp;&nbsp;&nbsp;</td><td>N/A</td><td>&nbsp;&nbsp;&nbsp;</td><td>N/A</td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
+	<tr><td><font  color="#999">HW06 - Earth Sandwich</font></td><td>&nbsp;&nbsp;&nbsp;</td><td><font  color="#999">Deferred</font></td><td>&nbsp;&nbsp;&nbsp;</td><td>N/A</td><td>&nbsp;&nbsp;&nbsp;</td><td>N/A</td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
 	<tr><td><a href="http://ec2-54-86-114-254.compute-1.amazonaws.com/dotnetnuke">HW07 - Cloud</a></td><td>&nbsp;&nbsp;&nbsp;</td><td>Completed</td><td>&nbsp;&nbsp;&nbsp;</td><td><a href="docs/HW07-CloudComputing-Writeup.docx">Writeup</a></td><td>&nbsp;&nbsp;&nbsp;</td><td><a href="http://ec2-54-86-114-254.compute-1.amazonaws.com/dotnetnuke">Deliverable: <u>Here</u>.</a></td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
-	<tr><td><font  color="#999">HW08 - MVC</font></td><td>&nbsp;&nbsp;&nbsp;</td><td><font  color="#999">Skipped</font></td><td>&nbsp;&nbsp;&nbsp;</td><td>N/A</td><td>&nbsp;&nbsp;&nbsp;</td><td>N/A</td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
-	<tr><td><font  color="#999">HW09 - Mashups</font></td><td>&nbsp;&nbsp;&nbsp;</td><td><font  color="#999">Skipped</font></td><td>&nbsp;&nbsp;&nbsp;</td><td>N/A</td><td>&nbsp;&nbsp;&nbsp;</td><td>N/A</td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
+	<tr><td><font  color="#999">HW08 - MVC</font></td><td>&nbsp;&nbsp;&nbsp;</td><td><font  color="#999">Deferred</font></td><td>&nbsp;&nbsp;&nbsp;</td><td>N/A</td><td>&nbsp;&nbsp;&nbsp;</td><td>N/A</td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
+	<tr><td><font  color="#999">HW09 - Mashups</font></td><td>&nbsp;&nbsp;&nbsp;</td><td><font  color="#999">Deferred</font></td><td>&nbsp;&nbsp;&nbsp;</td><td>N/A</td><td>&nbsp;&nbsp;&nbsp;</td><td>N/A</td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
 	<tr><td><a href="zips/davebook.zip">HW10 - Mobile Web</a></td><td>&nbsp;&nbsp;&nbsp;</td><td>Completed</td><td>&nbsp;&nbsp;&nbsp;</td><td><a href="docs/HW10-MobileWeb-Writeup.docx">Writeup</a></td><td>&nbsp;&nbsp;&nbsp;</td><td><a href="zips/davebook.zip">Deliverable: <u>Here</u>.</a></td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
-	<tr><td><font  color="#999">HW11 - WebDB</font></td><td>&nbsp;&nbsp;&nbsp;</td><td><font  color="#999">Skipped</font></td><td>&nbsp;&nbsp;&nbsp;</td><td>N/A</td><td>&nbsp;&nbsp;&nbsp;</td><td>N/A</td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
+	<tr><td><font  color="#999">HW11 - WebDB</font></td><td>&nbsp;&nbsp;&nbsp;</td><td><font  color="#999">Deferred</font></td><td>&nbsp;&nbsp;&nbsp;</td><td>N/A</td><td>&nbsp;&nbsp;&nbsp;</td><td>N/A</td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
+	<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
 	<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
 	<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
 	<tr><td><h3>In-Class Presentation</h3></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
