@@ -26,7 +26,7 @@ require_once 'Google/Service/Urlshortener.php';
  ************************************************/
  $client_id = '260545268792-9fbe528g5q7lmac2eaqd8h2bj3g2bb2s.apps.googleusercontent.com';
  $client_secret = '0kmDMuY9I3s99Oh3621kvEAV';
- $redirect_uri = 'http://localhost/dave/seisdave/gplus-quickstart-php/test1.php';
+ $redirect_uri = 'http://localhost/dave/seisdave/test1.php';
 
 /************************************************
   Make an API request on behalf of a user. In

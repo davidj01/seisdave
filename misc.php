@@ -40,7 +40,8 @@
 	  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Search using:<a href="searchajax1.htm">&nbsp;&nbsp;&nbsp;<strong>Ajax Search</strong></a>&nbsp;&nbsp;&nbsp;or&nbsp;&nbsp;&nbsp;<a href="searchajax2.htm"><strong>Ajax/Jquery Search</strong></a>
 	  </div>
 	</div>
-<table><tr><td width="300px">
+<table><tr>
+<td width="300px">
 <?php
 
   // Make sure the user is logged in before going any further.
@@ -126,21 +127,29 @@
 	<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
 	<tr><td><u><b>Assignment</b></u></td><td></td><td><u><b>Status</b></u></td><td></td><td><u><b>Writeup</b></u></td><td></td><td><u><b>Notes</b></u></td><td></td><td></td></tr>
 	<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-	<tr><td>HW01 - Online Survey</td><td>&nbsp;&nbsp;&nbsp;</td><td>Completed</td><td>&nbsp;&nbsp;&nbsp;</td><td></td><td>&nbsp;&nbsp;&nbsp;</td><td></td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
-	<tr><td>HW02 - Register Domain</td><td>&nbsp;&nbsp;&nbsp;</td><td>Completed</td><td>&nbsp;&nbsp;&nbsp;</td><td><a href="docs/HW02-RegisterDomain.docx">Writeup</a></td><td>&nbsp;&nbsp;&nbsp;</td><td></td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
-	<tr><td>HW03 - PHP/MySQL FriendFace</td><td>&nbsp;&nbsp;&nbsp;</td><td>Completed</td><td>&nbsp;&nbsp;&nbsp;</td><td><a href="docs/HW03-PHPMySQLFriendFace.docx">Writeup</a></td><td>&nbsp;&nbsp;&nbsp;</td><td>Deliverable is this site.</td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
-	<tr><td>HW04 - AJAX</td><td>&nbsp;&nbsp;&nbsp;</td><td>Completed</td><td>&nbsp;&nbsp;&nbsp;</td><td></td><td>&nbsp;&nbsp;&nbsp;</td><td>Deliverable is on this site.</td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
-	<tr><td><a href="hw05-twilio.php">HW05 - Web API: Twilio</a></td><td>&nbsp;&nbsp;&nbsp;</td><td>Completed</td><td>&nbsp;&nbsp;&nbsp;</td><td><a href="">Writeup</a></td><td>&nbsp;&nbsp;&nbsp;</td><td><a href="hw05-twilio.php">Deliverable is on this site.</a></td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
-	<tr><td><a href="">HW05 - Web API: Oauth</a></td><td>&nbsp;&nbsp;&nbsp;</td><td>In Progress</td><td>&nbsp;&nbsp;&nbsp;</td><td><a href="">Writeup</a></td><td>&nbsp;&nbsp;&nbsp;</td><td></td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
-	<tr><td>HW06 - Earth Sandwich</td><td>&nbsp;&nbsp;&nbsp;</td><td>Skipped</td><td>&nbsp;&nbsp;&nbsp;</td><td></td><td>&nbsp;&nbsp;&nbsp;</td><td></td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
-	<tr><td>HW07 - Cloud</td><td>&nbsp;&nbsp;&nbsp;</td><td>Incomplete</td><td>&nbsp;&nbsp;&nbsp;</td><td><a href="">Writeup</a></td><td>&nbsp;&nbsp;&nbsp;</td><td></td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
-	<tr><td>HW08 - MVC</td><td>&nbsp;&nbsp;&nbsp;</td><td>Incomplete</td><td>&nbsp;&nbsp;&nbsp;</td><td><a href="">Writeup</a></td><td>&nbsp;&nbsp;&nbsp;</td><td></td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
-	<tr><td>HW09 - Mashups</td><td>&nbsp;&nbsp;&nbsp;</td><td>Skipped</td><td>&nbsp;&nbsp;&nbsp;</td><td></td><td>&nbsp;&nbsp;&nbsp;</td><td></td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
-	<tr><td>HW10 - Mobile Web</td><td>&nbsp;&nbsp;&nbsp;</td><td>Skipped</td><td>&nbsp;&nbsp;&nbsp;</td><td></td><td>&nbsp;&nbsp;&nbsp;</td><td></td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
-	<tr><td>HW11 - WebDB</td><td>&nbsp;&nbsp;&nbsp;</td><td>Skipped</td><td>&nbsp;&nbsp;&nbsp;</td><td></td><td>&nbsp;&nbsp;&nbsp;</td><td></td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
+	<tr><td>HW01 - Online Survey</td><td>&nbsp;&nbsp;&nbsp;</td><td>Completed</td><td>&nbsp;&nbsp;&nbsp;</td><td>N/A</td><td>&nbsp;&nbsp;&nbsp;</td><td>N/A</td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
+	<tr><td>HW02 - Register Domain</td><td>&nbsp;&nbsp;&nbsp;</td><td>Completed</td><td>&nbsp;&nbsp;&nbsp;</td><td><a href="docs/HW02-RegisterDomain.docx">Writeup</a></td><td>&nbsp;&nbsp;&nbsp;</td><td>N/A</td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
+	<tr><td>HW03 - PHP/MySQL FriendFace</td><td>&nbsp;&nbsp;&nbsp;</td><td>Completed</td><td>&nbsp;&nbsp;&nbsp;</td><td><a href="docs/HW03-PHPMySQLFriendFace.docx">Writeup</a></td><td>&nbsp;&nbsp;&nbsp;</td><td>Deliverable: This site.</td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
+	<tr><td>HW04 - AJAX</td><td>&nbsp;&nbsp;&nbsp;</td><td>Completed</td><td>&nbsp;&nbsp;&nbsp;</td><td>N/A</td><td>&nbsp;&nbsp;&nbsp;</td><td>Deliverable: On this site.</td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
+	<tr><td><a href="hw05-twilio.php">HW05 - Web API: Twilio</a></td><td>&nbsp;&nbsp;&nbsp;</td><td>Completed</td><td>&nbsp;&nbsp;&nbsp;</td><td><a href="docs/HW05-WebAPIs-Writeup.docx">Writeup</a></td><td>&nbsp;&nbsp;&nbsp;</td><td><a href="hw05-twilio.php">Deliverable: <u>Here</u>.</a></td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
+	<tr><td><a href="hw05-oauth.php">HW05 - Web API: Oauth</a></td><td>&nbsp;&nbsp;&nbsp;</td><td>Completed</td><td>&nbsp;&nbsp;&nbsp;</td><td><a href="docs/HW05-WebAPIs-Writeup.docx">Writeup</a></td><td>&nbsp;&nbsp;&nbsp;</td><td><a href="hw05-oauth.php">Deliverable: <u>Here</u>.</a></td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
+	<tr><td><font  color="#999">HW06 - Earth Sandwich</font></td><td>&nbsp;&nbsp;&nbsp;</td><td><font  color="#999">Skipped</font></td><td>&nbsp;&nbsp;&nbsp;</td><td>N/A</td><td>&nbsp;&nbsp;&nbsp;</td><td>N/A</td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
+	<tr><td><a href="http://ec2-54-86-114-254.compute-1.amazonaws.com/dotnetnuke">HW07 - Cloud</a></td><td>&nbsp;&nbsp;&nbsp;</td><td>Completed</td><td>&nbsp;&nbsp;&nbsp;</td><td><a href="docs/HW07-CloudComputing-Writeup.docx">Writeup</a></td><td>&nbsp;&nbsp;&nbsp;</td><td><a href="http://ec2-54-86-114-254.compute-1.amazonaws.com/dotnetnuke">Deliverable: <u>Here</u>.</a></td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
+	<tr><td><font  color="#999">HW08 - MVC</font></td><td>&nbsp;&nbsp;&nbsp;</td><td><font  color="#999">Skipped</font></td><td>&nbsp;&nbsp;&nbsp;</td><td>N/A</td><td>&nbsp;&nbsp;&nbsp;</td><td>N/A</td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
+	<tr><td><font  color="#999">HW09 - Mashups</font></td><td>&nbsp;&nbsp;&nbsp;</td><td><font  color="#999">Skipped</font></td><td>&nbsp;&nbsp;&nbsp;</td><td>N/A</td><td>&nbsp;&nbsp;&nbsp;</td><td>N/A</td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
+	<tr><td><a href="zips/davebook.zip">HW10 - Mobile Web</a></td><td>&nbsp;&nbsp;&nbsp;</td><td>Completed</td><td>&nbsp;&nbsp;&nbsp;</td><td><a href="docs/HW10-MobileWeb-Writeup.docx">Writeup</a></td><td>&nbsp;&nbsp;&nbsp;</td><td><a href="zips/davebook.zip">Deliverable: <u>Here</u>.</a></td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
+	<tr><td><font  color="#999">HW11 - WebDB</font></td><td>&nbsp;&nbsp;&nbsp;</td><td><font  color="#999">Skipped</font></td><td>&nbsp;&nbsp;&nbsp;</td><td>N/A</td><td>&nbsp;&nbsp;&nbsp;</td><td>N/A</td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
+	<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+	<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+	<tr><td><h3>In-Class Presentation</h3></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+	<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+	<tr><td><u><b>Assignment</b></u></td><td></td><td><u><b>Status</b></u></td><td></td><td><u><b>Writeup</b></u></td><td></td><td><u><b>Notes</b></u></td><td></td><td></td></tr>
+	<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+	<tr><td><a href="ppts/WebAnimation.pptx">Presentation: Web Animation</a></td><td>&nbsp;&nbsp;&nbsp;</td><td>Completed</td><td>&nbsp;&nbsp;&nbsp;</td><td><a href="docs/Presentation-WebAnimation.docx">Writeup</a></td><td>&nbsp;&nbsp;&nbsp;</td><td><a href="ppts/WebAnimation.pptx">PowerPoint Deck</a></td><td>&nbsp;&nbsp;&nbsp;</td><td></td></tr>
 </table>
 </p>
-</td></tr></table>
+</td>
+</tr></table>
 
 </body>
 </html>

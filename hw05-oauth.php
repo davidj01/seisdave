@@ -119,38 +119,13 @@
 <td>
 <br />
 <br />
-<h3><u>Twilio API</u></h3>
+<h3><u>Oauth 2.0 API</u></h3>
 <br />
-Messages below are results of successful tests of Twilio SMS populating 'seisdave' MySQL database on this site.<br />
-* My Twilio number is currently pointing to our project site - ScrapAttack.net and can be tested by *<br />
-* sending an SMS to 612-255-1559 and navigating to http://www.scrapattack.net/sms-twilio-view.php *
+<a href="gplus-quickstart-php/signin.php">First attempt using PHP Quickstart from Google's Developer site.</a>
 <br />
 <br />
-<?php
-include_once('config-sms.php');
-
-$sql = "SELECT ts, SUBSTRING(SUBSTRING_INDEX(SUBSTRING_INDEX(twilliotest.dump, '\n', 17), '\n', -1), 8, 10) as fromphone,
-SUBSTRING(SUBSTRING_INDEX(SUBSTRING_INDEX(twilliotest.dump, '\n', 13), '\n', -1), 6, 10) as tophone, 
-SUBSTRING(SUBSTRING_INDEX(SUBSTRING_INDEX(twilliotest.dump, '\n', 11), '\n', -1), 6, 10000) as body 
-from twilliotest order by ts desc limit 20";
-
-print '<br /><table>';
-if ($result=mysqli_query($db,$sql))
-  {
-  // Fetch one and one row
-  while ($row=mysqli_fetch_row($result))
-  {
-//    printf('<tr><td>%s</td><td><pre>%s</pre></td></tr>',$row[0],$row[1]);
-    printf('<tr><td>Time: </td><td>%s</td></tr><tr><td>From: </td><td>%s</td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;To: </td><td>%s</td></tr><tr><td>Body: </td><td>%s</td></tr><tr><td><br /></td></tr>',$row[0],$row[1],$row[2],$row[3]);
-  }
-  // Free result set
-  mysqli_free_result($result);
-}
-print '</table>';
-
-mysqli_close($db);
-?>
-
+<br />
+<a href="test1.php">Second attempt with Lloyd's help.</a>
 </td></tr></table>
 
 </body>
